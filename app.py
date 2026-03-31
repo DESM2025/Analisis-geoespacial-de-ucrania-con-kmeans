@@ -12,16 +12,15 @@ left, right = st.columns([1.1, 1], gap="large")
 with left:
     st.markdown(
     """
-El objetivo de la investigación será comprender y cartografiar la dinámica territorial de un conflicto real como el de Ucrania durante el periodo de tiempo de la 
-campaña de invierno (1 de octubre de 2024 a 31 de enero de 2025).
+El objetivo de la investigación será comprender y cartografiar la dinámica territorial de un conflicto real como el de Ucrania.
 
-Para lograr este objetivo la investigación se apoyará en la Inteligencia Artificial como herramienta analítica de los datos recopilados, específicamente en 
+Para lograr esto la investigación se apoyará en la IA y algoritmos como herramientas de analítica de los datos recopilados, específicamente se espera usar 
 algoritmos de clustering geoespacial (como K-Means y DBSCAN), para procesar miles de coordenadas geográficas exactas de incidentes. En lugar de tratar estos incidentes como un conjunto 
 homogéneo se propone una aproximación metodológica estratégica, al separar los enfrentamientos directos de infantería de los ataques remotos y bombardeos.
 
 Al aplicar estos modelos de aprendizaje no supervisado sobre las coordenadas geográficas exactas de miles de incidentes extraídos de las bases de datos a investigar, 
 el algoritmo debería poder agrupar estos eventos espaciales y permitir visualizar y comparar, libres de sesgo humano, 
-las distintas lógicas territoriales que rigen la guerra terrestre frente a la guerra remota.
+las distintas lógicas territoriales que rigen la guerra moderna.
 """
 )
 

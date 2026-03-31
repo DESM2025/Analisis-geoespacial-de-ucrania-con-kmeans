@@ -56,26 +56,25 @@ st.markdown(
 st.subheader("Validación humana")
 st.markdown(
     """
-Se comprobó que "clustering" es el concepto teórico correcto para agrupar coordenadas masivas sin sesgo visual. 
+Clustering es el concepto teórico correcto para agrupar coordenadas masivas sin sesgo visual. 
 Al investigar algoritmos espaciales, se validó que tanto K-Means como DBSCAN son viables para datos geoespaciales, 
 ya que agrupan por cercanía matemática y densidad. Esto permite evaluar metodológicamente cuál de los dos segmenta mejor el mapa en zonas tácticas operativas.
 
-Al revisar UCDP (Uppsala Conflict Data Program) se comprobó que es la fuente de referencia para la ONU y es de libre acceso, pero 
+Al revisar UCDP (Uppsala Conflict Data Program) se encontro que es la fuente de referencia para la ONU para este tipo de conflictosy es de libre acceso, pero 
 presenta el problema de que sus datos se actualizan más lento y omiten incidentes menores de infantería, lo cual es perjudicial para mapear una guerra de trincheras.
 
-El término ACLED que mencionó la IA (Armed Conflict Location & Event Data Project) corresponde a una organización que funciona como un 
-observatorio de crisis a nivel mundial. Se validó como la fuente empírica más robusta para este proyecto, superando a UCDP por su alta granularidad. 
+El término ACLED (Armed Conflict Location & Event Data Project) corresponde a una organización que funciona como un 
+observatorio de crisis a nivel mundial. Se validó como la fuente empírica más robusta para este proyecto, superando a UCDP por su mayor cantidad de datos. 
 Sin embargo, fue requerido solicitar acceso nivel Research (Investigador) mediante correo para uso académico, una restricción de seguridad que la IA 
 omitió inicialmente al asegurar que los datos eran de descarga libre.
 
-Durante la exploración técnica de la API de ACLED, se identificó una restricción estricta: el acceso a las coordenadas exactas 
-tiene un embargo de 12 meses para las cuentas de investigador. Por lo tanto, de usarse este datsetel el proyecto debera hacerce en una ventana 
-de tiempo anterior a marzo de 2025.
+Durante la exploración técnica de la API de ACLED, se identificó una restricción, el acceso a las coordenadas exactas 
+tiene un embargo de 12 meses para las cuentas de investigador. Por lo tanto, de usarse este datsetet sera en una ventana de tiempo anterior a marzo de 2025.
 
 Además, se descartaron términos de búsqueda muy generales como "aprendizaje no supervisado" en favor de conceptos precisos como "Análisis de Patrones de Puntos" y 
 "Clustering Espacial".
 
-Para la investigación de información, estructuración teórica y validación metodológica se utilizó Gemini 3.1 Pro, y para la parte de código de la página web se 
+Para la investigación de información, estructuración teórica, correciones de texto y validación metodológica se utilizó Gemini 3.1 Pro, y para el código de la app de streamlit se 
 utilizó GitHub Copilot con el modelo GPT-5.3-Codex.
 """
 )

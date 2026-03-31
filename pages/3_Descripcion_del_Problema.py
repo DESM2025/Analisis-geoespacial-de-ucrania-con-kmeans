@@ -8,8 +8,8 @@ st.title("Descripción del Problema")
 st.markdown(
     """
 El problema central de esta investigación radica en la sobrecarga de datos geoespaciales que generan los conflictos modernos y la dificultad 
-de interpretarlos de manera objetiva y verificar su autenticidad. Al extraer miles de incidentes de plataformas abiertas, el análisis visual tradicional 
-colapsa, ya que el ojo humano es incapaz de agrupar coordenadas masivas sin caer en sesgos cognitivos o agrupar puntos por simple proximidad visual.
+de interpretarlos de manera objetiva y verificar su autenticidad. Al extraer miles de incidentes de plataformas abiertas como las redes sociales, el análisis visual tradicional 
+colapsa, ya que el humano es incapaz de agrupar coordenadas masivas sin caer en sesgos cognitivos o agrupar puntos por simple proximidad visual.
 
 A esto se suma una brecha analítica importante: tratar todos los incidentes violentos como un fenómeno único. Mezclar en un mismo mapa los combates de trincheras 
 (infantería) con los ataques de misiles a larga distancia (artillería) distorsiona la realidad táctica y arrastra los frentes de batalla fuera de su posición real.
@@ -22,7 +22,7 @@ garantizando que el modelo algorítmico se alimente exclusivamente de incidentes
 2. Superar el sesgo visual mediante clustering espacial: Utilizar modelos de agrupamiento (evaluando enfoques basados en minimización de distancias y en densidad) 
 para clasificar las coordenadas de forma matemática y sin intervención humana en un frente de más de 1.000 kilómetros.
 
-3. Segmentar la realidad táctica: Identificar de forma independiente dónde se concentra la línea de contacto (guerra terrestre) y dónde ocurren los patrones de 
+3. Segmentar la realidad táctica: Identificar de forma independiente dónde se concentra la línea del frente (guerra terrestre) y dónde ocurren los patrones de 
 ataque en la retaguardia (guerra aérea y de artillería).
 """
 )
