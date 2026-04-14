@@ -63,10 +63,8 @@ def preparar_dataset(df: pd.DataFrame) -> pd.DataFrame:
         "fatalities",
     ]
 
-    # Reindex evita errores si alguna columna no viene en la respuesta.
     df_modelo = df.reindex(columns=columnas_clave).copy()
 
-    # Limpieza mínima para evitar fallas en modelado geoespacial.
     df_modelo["latitude"] = pd.to_numeric(df_modelo["latitude"], errors="coerce")
     df_modelo["longitude"] = pd.to_numeric(df_modelo["longitude"], errors="coerce")
     df_modelo = df_modelo.dropna(subset=["latitude", "longitude"])
